@@ -1,0 +1,43 @@
+.section-one-button-container {
+    transition: all 0.2s ease;
+}
+.section-one-button-container:hover {
+    background-color: purple;
+}
+.section-one-anim-one {
+    position: relative;
+}
+.section-one-anim-one-img-one {
+    position: absolute;
+}
+.section-one-anim-one-img-one:active {
+    transform: translate(100px);
+}
+.section-one-anim-two {
+    position: relative;
+}
+.section-one-anim-one-img-two {
+    position: absolute;
+    width: 500px;
+}
+.cards {
+    transition: all 0.5s ease;
+}
+
+.card-image {
+    transition: all 0.5s ease;
+}
+.cards:hover {
+    transform: translateY(-20px);
+}
+.cards:hover .card-image {
+    transform: rotateY(360deg);
+}
+
+.gallery-buttons {
+    transition: all 0.2s ease-in;
+}
+.gallery-buttons:hover {
+    background-color: rgb(255, 88, 116);
+    color: white;
+}

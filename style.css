@@ -1,0 +1,347 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    
+}
+img {
+    display: block;
+}
+.top-info-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blueviolet;
+    padding: 10px 10px 10px 10px;
+}
+.number {
+    display: flex;
+}
+.mobile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px 0 20px 0;
+    position: sticky;
+    top: 10px;
+}
+.menu-icon {
+    margin-right: 10px;
+    border: 1.4px solid black;
+    border-radius: 0.1vh;
+}
+.pc-tablet-header {
+    display: none;
+}
+.sections-container {
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    height: 100%;
+}
+.section-one {
+    background-image: url(images/section-1-img.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1000px;
+    width: 1fr;
+    margin: 0 3% 0 3%;
+}
+.section-one-animation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 400px;
+}
+.section-one-title {
+    color: blueviolet;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+.section-one-text {
+    font-weight: bolder;
+}
+.section-one-button-container {
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 110px;
+    padding: 5px 5px 5px 15px;
+    border-radius: 1vh;
+}
+.section-one-button {
+    text-decoration: none;
+    color: white;
+    word-spacing: 2px;
+    margin-top: 4px;
+    font-weight: bolder;
+    font-size: small;
+}
+.section-two{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+.animation-container-one-sect-two {
+    text-align: center;
+}
+.bee-animmation {
+    margin: 0 auto 0 auto;
+}
+
+.animation-container-two-sect-two {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap row-reverse;
+}
+.cards {
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+.card-image {
+    margin: 0 auto 0 auto;
+    border-radius: 100%;
+    padding: 5px 5px 5px 5px;
+    border: 2px dashed white; 
+}
+.card-title {
+    color: white;
+}
+.card-text {
+    color: white;
+}
+.card-one {
+    background-color: rgb(248, 66, 66);
+    border-radius: 1vh;
+    padding: 10px 10px 10px 10px;
+}
+.card-two {
+    background-color: rgb(242, 211, 8);
+    border-radius: 1vh;
+    padding: 10px 10px 10px 10px;
+}
+.card-three {
+    background-color: rgb(98, 228, 42);
+    border-radius: 1vh;
+    padding: 10px 10px 10px 10px;
+}
+.card-four {
+    background-color: rgb(66, 139, 248);
+    border-radius: 1vh;
+    padding: 10px 10px 10px 10px;
+}
+
+
+.section-three {
+    background-color: beige;
+    font-size: smaller;
+    display: inline;
+    margin-top: 10px;
+
+}
+.sect-three-animation-img {
+    display: block;
+  
+}
+.section-three-text-grid {
+    display: grid;
+    grid-template-areas:
+    "title"
+    "p1"
+    "p2"
+    "p3";
+
+}
+.section-three-title {
+    grid-area: title;
+}
+.paragraph-one {
+    grid-area: p1;
+
+}
+.paragraph-two {
+    grid-area: p2;
+}
+.paragraph-three {
+    grid-area: p3;
+}
+
+
+.section-four {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+.sect-four-animation-container-one {
+    margin: 0 auto 0 auto;
+}
+.section-four-text{
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.section-four-h5 {
+    color: rgb(236, 90, 114);
+}
+.section-four-h3 {
+    color:rgb(46, 5, 83);
+}
+.sect-four-animation-container-two {
+    margin: 0 auto 0 auto;
+
+}
+.static-bee {
+    margin: 0 auto 0 auto;
+}
+.value-cards {
+    display: flex;
+    flex-direction: column;
+
+}
+.value-card {
+    display: grid;
+    grid-template-areas:
+    "title tilte"
+    "text image";
+}   
+.value-card-title {
+    grid-area: title;
+}
+.value-card-text {
+    grid-area: text;
+}
+.value-card-images {
+    grid-area: image;
+   
+}
+.value-card-image-one {
+    background-color: red;
+    width: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    border: 2px dashed rgb(35, 35, 35);
+    align-self: flex-end;
+}
+.value-card-image-two {
+    background-color: rgb(68, 255, 0);
+    width: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    border: 2px dashed rgb(35, 35, 35);
+    align-self: flex-end;
+}
+.value-card-image-three {
+    background-color: rgb(0, 191, 255);
+    width: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    border: 2px dashed rgb(35, 35, 35);
+    align-self: flex-start;
+}
+.value-card-image-four {
+    background-color: rgb(255, 225, 0);
+    width: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    border: 2px dashed rgb(35, 35, 35);
+    align-self: flex-start;
+}
+.value-card-image-five {
+    background-color: rgba(251, 247, 177, 0.675);
+    width: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    border: 2px dashed rgb(35, 35, 35);
+    align-self: center;
+}
+
+.section-five {
+    background-color: rgb(55, 0, 107);
+}
+.section-five-text{
+    margin: 0 auto 0 auto;
+    text-align: left;
+    color: white;
+}
+.section-five-h5 {
+    color: rgb(236, 90, 114);
+}
+.section-five-h3 {
+    color:white;
+}
+.sect-five-selections {
+    background-color: white;
+    border-radius: 1vh;
+    margin: 10px 25px 10px 25px;
+    padding: 2px 2px 2px 2px;
+}
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid gainsboro;
+}
+
+.section-six {
+    background-color: rgb(135, 237, 135);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.circles {
+    border: 4px dashed white;
+    margin: 20px auto 0 auto;
+    padding: 40px 40px 40px 40px;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+}
+.circle-image {
+    display: block;
+}
+
+.gallery-buttons-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    margin: 0 auto 0 auto;
+    gap:60px;
+}
+.section-seven-text{
+    margin: 0 auto 0 auto;
+    text-align: center;
+
+}
+.section-seven-h5 {
+    color: rgb(236, 90, 114);
+}
+.section-seven-h3 {
+    color:white;
+}
+.gallery-images-container {
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap;
+}
+.gallery-buttons {
+    margin: 0 auto 0 auto;
+    font-size: xx-large;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 1vh;
+}
+.gallery-images {
+    width: 700px;
+}
