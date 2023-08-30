@@ -7,9 +7,15 @@
 .section-one-anim-one {
     position: relative;
 }
+@keyframes leftRightBig {
+    0% {transform: translateX(0%);}
+    100%{transform: translateX(100%);}
+}
 .section-one-anim-one-img-one {
     position: absolute;
+    animation: leftRightBig 5s both infinite linear alternate;
 }
+
 .section-one-anim-one-img-one:active {
     transform: translate(100px);
 }
@@ -40,4 +46,43 @@
 .gallery-buttons:hover {
     background-color: rgb(255, 88, 116);
     color: white;
+}
+.bee-animmation {
+    margin: 0 auto 0 auto;
+    animation: leftRightBig 2s both infinite linear alternate;
+}
+@keyframes upDownShort {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-100px);}
+    100%{transform: translateY(100px);}
+}
+
+@keyframes leftRightShort {
+    0% {transform: translateX(0px);}
+    50% {transform: translateX(-150px);}
+    100%{transform: translateX(150px);}
+}
+.sect-four-animation-image-one {
+    animation: leftRightShort 5s both infinite linear alternate;
+}
+.sect-four-animation-image-two {
+    animation: leftRightShort 5s both infinite linear alternate;
+}
+.sect-four-animation-image-three {
+    animation: upDownShort 5s both infinite linear alternate;
+}
+@keyframes RightShort{
+    0% {transform: translateX(0px);}
+    100%{transform: translateX(200px);}
+}
+.sect-three-animation-img {
+    margin-right: 300px;
+    animation: RightShort 5s both infinite linear alternate;
+}
+@keyframes upShort {
+    0% {transform: translateY(0px);}
+    100%{transform: translateY(-50px);}
+}
+.section-one-anim-two {
+    animation: upShort 5s both infinite linear alternate;
 }
